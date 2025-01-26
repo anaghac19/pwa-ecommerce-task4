@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray text color */
+  }
+  
+  header {
+    background-color: #007bff; /* A professional blue shade */
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  #products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Fits smaller screens better */
+    gap: 1.5rem;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Softer rounded corners */
+    padding: 1.5rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth with a shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Adds hover animation */
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px); /* Moves the card up slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow on hover */
+  }
+  
+  footer {
+    background-color: #343a40; /* A darker gray */
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Shadow at the top of the footer */
+  }
+  
+  img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover; /* Ensures the image scales properly */
+    border-radius: 50%; /* Makes the image circular */
+    margin: 0 auto; /* Centers the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow around the image */
+    transition: transform 0.3s ease; /* Smooth hover animation */
+  }
+  
+  img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
